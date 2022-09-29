@@ -1,0 +1,202 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<header class="collect-header">
+    <div class="collect-container">
+        <div class="collect-position">
+            <div class="collect-header-div1">
+                <figure>
+                    <img src="../static/images/logo.png" alt="" />
+                </figure>
+            </div>
+            <div class="collect-header-div2">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="{% url 'home' %}">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'collect' %}">
+                                Collections
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'roadmap' %}">
+                                Roadmap
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'faq' %}">
+                                FAQs
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="collect-header-div3">
+                <a class="collect-wallet" href="{% url 'connect_wallet' %}"> Connect Wallet </a>
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div>
+        <div class="collect-split collect-container">
+
+            <!-- <div class="collect-data">
+                <h3> Category </h3>
+                <ul>
+                    <li class="list active" data-filter="all"> All </li>
+                    <li class="list" data-filter="art"> Art </li>
+                    <li class="list" data-filter="collect"> Collectibles </li>
+                    <li class="list" data-filter="games"> Games </li>
+                    <li class="list" data-filter="music"> Music </li>
+                    <li class="list" data-filter="photo"> Photography </li>
+                    <li class="list" data-filter="sports"> Sports </li>
+                    <li class="list" data-filter="card"> Trade Cards </li>
+                    <li class="list" data-filter="vid"> Videos </li>
+                </ul>
+            </div> -->
+
+            <div class="collect-collection">
+                
+                    {% for data in collectionList %}
+
+                    <a href="{% url 'detail' data.id %}">
+                        <div class="vid all">
+                            <figure>
+                                <img src="{% static data.image %}" alt="nft">
+                            </figure>
+        
+                            <h4>
+                                {{data.name_of_NFT}}
+                            </h4>
+        
+                            <p>
+                                Current Bid
+                            </p>
+                            <p class="yellow"> {{data.currency}}  </p>
+                        </div>
+                    </a>
+                    
+                    {% endfor %}
+                
+            </div>
+</section>
+<section>
+    <!-- <div data-aos="fade-up" data-aos-duration="3000"> -->
+    <div class="collect-div-2 collect-container">
+        <div id="collect-gallery">
+
+            <h1>
+                Popular NFTs :
+            </h1>
+
+            <a href="../static/images/nft-13.png" data-lightbox="mygallery">
+                <img height="230px" width="230px" src="../static/images/nft-13.png"></a>
+
+            <a href="../static/images/nft-8.jpeg" data-lightbox="mygallery">
+                <img height="230px" width="230px" src="../static/images/nft-8.jpeg"></a>
+
+            <a href="../static/images/nft-6.jpg" data-lightbox="mygallery">
+                <img height="230px" width="230px" src="../static/images/nft-6.jpg"></a>
+
+            <a href="../static/images/nft-12.jpg" data-lightbox="mygallery">
+                <img height="230px" width="230px" src="../static/images/nft-12.jpg"></a>
+
+            <a href="../static/images/nft-9.jpg" data-lightbox="mygallery">
+                <img height="230px" width="230px" src="../static/images/nft-9.jpg"></a>
+
+            <a href="../static/images/nft-17.jpg" data-lightbox="mygallery">
+                <img height="230px" width="230px" src="../static/images/nft-17.jpg"></a>
+
+            <a href="../static/images/nft-15.png" data-lightbox="mygallery">
+                <img height="230px" width="230px" src="../static/images/nft-15.png"></a>
+
+            <a href="../static/images/nft-20.jpeg" data-lightbox="mygallery">
+                <img height="230px" width="230px" src="../static/images/nft-20.jpeg"></a>
+
+            <a href="../static/images/nft-19.jpg" data-lightbox="mygallery">
+                <img height="230px" width="230px" src="../static/images/nft-19.jpg"></a>
+
+            <a href="../static/images/nft-24.png" data-lightbox="mygallery">
+                <img height="230px" width="230px" src="../static/images/nft-24.png"></a>
+
+            <a href="../static/images/nft-25.jpg" data-lightbox="mygallery">
+                <img height="230px" width="230px" src="../static/images/nft-25.jpg"></a>
+
+            <a href="../static/images/nft-7.jpg" data-lightbox="mygallery" data-title="">
+                <img height="230px" width="230px" src="../static/images/nft-7.jpg"></a>
+
+        </div>
+    </div>
+    </div>
+</section>
+<footer class="collect-footer">
+    <div class="collect-container-hf">
+        <div class="collect-footer-div1">
+            <figure>
+                <img src="../static/images/logo.png" alt="">
+            </figure>
+        </div>
+        <div class="collect-footer-div2">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Privacy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Terms
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:0900-78601">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="collect-footer-div3">
+            <a href="#">
+                <figure>
+                    <img src="../static/images/footer-logo1.png" alt="">
+                </figure>
+            </a>
+            <a href="#">
+                <figure>
+                    <img src="../static/images/footer-logo2.png" alt="">
+                </figure>
+            </a>
+        </div>
+    </div>
+</footer>
+<script>
+
+    AOS.init();
+
+    $(document).ready(function () {
+        $('.list').click(function () {
+            const value = $(this).attr('data-filter');
+
+            if (value == 'all') {
+                $('.all').show('1000');
+            }
+
+            else {
+                $('.all').filter('.' + value).show('1000');
+                $('.all').not('.' + value).hide('1000');
+            }
+        })
+        $('.list').click(function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+    })
+
+</script>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<div class="container">
+    <img src="../static/images/logo.png" alt="" class="avatar">
+    <h1 class="label">User Login</h1>
+    <form action="" id="form" class="login-form" method="get">
+        <div class="font">Email</div>
+        <input type="text" name="email" id="email" placeholder="Enter your Email" required>
+        <!-- <div id="email-err">Please enter your email</div> -->
+        <div class="font font2">Password</div>
+        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+        <!-- <div id="pass-err">Please enter your password</div> -->
+       <a href="check_out.html"><button type="submit">Login</button></a>
+        {% comment %} <input type="submit" name="" value="login" href="check_out.html"> {% endcomment %}
+        <a href="#">Lost your password?</a> <br>
+        <a href="{% url 'register' %}">Don't have an account?</a>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<header class="collect-header">
+    <div class="collect-container">
+      <div class="collect-position">
+        <div class="collect-header-div1">
+          <figure>
+            <img src="/static/images/logo.png" alt="" />
+          </figure>
+        </div>
+        <div class="collect-header-div2">
+          <nav>
+            <ul>
+              <li>
+                <a href="{% url 'home' %}">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'collect' %}">
+                  Collections
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'roadmap' %}">
+                  Roadmap
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'faq' %}">
+                  FAQs
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="collect-header-div3">
+          <a class="collect-wallet" href="{% url 'connect_wallet' %}"> Connect Wallet </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="home-container">
+        {% block mainContent %}
+        <div class="home-sec3-div1 detail_div1">
+          <img class="detail-image" src="{% static data.image %}" alt="" >
+        </div>
+        <div class="home-sec3-div2 detail_div">
+          <h1>
+            {{data.name_of_NFT}}
+          </h1>
+          <h2>
+            {{data.artist_name}}
+          </h2>
+          <h3>
+            {{data.currency}}
+          </h3>
+          <p>
+            {{data.detail}}
+          </p>
+          <a id="home-connect" class="detail-hover" href="{% url 'checkout' %}"> Buy Now </a>
+        </div>
+        {% endblock mainContent %}
+    </div>
+  </section>
+  <footer class="collect-footer">
+    <div class="collect-container-hf">
+        <div class="collect-footer-div1">
+            <figure>
+                <img src="/static/images/logo.png" alt="">
+            </figure>
+        </div>
+        <div class="collect-footer-div2">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Privacy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Terms
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:0900-78601">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="collect-footer-div3">
+            <a href="#">
+                <figure>
+                    <img src="/static/images/footer-logo1.png" alt="">
+                </figure>
+            </a>
+            <a href="#">
+                <figure>
+                    <img src="/static/images/footer-logo2.png" alt="">
+                </figure>
+            </a>
+        </div>
+    </div>
+</footer>
+{% endblock %}

@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<header class="create-header">
+    <div class="create-container create-container2">
+        <div class="create-header-div1">
+            <figure>
+                <img src="../static/images/logo.png" alt="" />
+            </figure>
+        </div>
+        <div class="create-header-div2">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="{% url 'home' %}">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'collect' %}">
+                            Collections
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'roadmap' %}">
+                            Roadmap
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'faq' %}">
+                            FAQs
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="create-header-div3">
+            <a class="create-wallet" href="{% url 'connect_wallet' %}">
+                Connect wallet
+            </a>
+        </div>
+    </div>
+    </div>
+</header>
+<section class="create-sec-1">
+    <video width="150%" height="250%" autoplay muted loop>
+        <source src="../static/images/bg.mp4" type="video/mp4">
+    </video>
+    <h2 class="create-main">
+        Create Collectibles
+    </h2>
+    <p>
+        Choose "Single" if you want your collectible to be one of a kind or "Multiple" if you want to sell one
+        collectible times
+    </p>
+    <div class="create-container create-container2 create-less-width">
+        <div class="create-sec1-div1">
+            <figure>
+                <img src="../static/images/create-image1.png" alt="">
+            </figure>
+            <h3>
+                Single
+            </h3>
+        </div>
+        <div class="create-sec1-div2">
+            <figure>
+                <img src="../static/images/create-image2.png" alt="">
+            </figure>
+            <h3>
+                Multiple
+            </h3>
+        </div>
+    </div>
+</section>
+<footer class="create-footer">
+    <div class="create-container create-container2">
+        <div class="create-footer-div1">
+            <a href="#">
+                <figure>
+                    <img src="../static/images/logo.png" alt="" />
+                </figure>
+            </a>
+        </div>
+        <div class="create-footer-div2">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#"> Privacy </a>
+                    </li>
+                    <li>
+                        <a href="#"> Terms </a>
+                    </li>
+                    <li>
+                        <a href="tel:0900-78601"> Contact Us </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="create-footer-div3">
+            <a href="https://discord.com/" target="_blank">
+                <figure>
+                    <img src="../static/images/footer-logo1.png" alt="" />
+                </figure>
+            </a>
+            <a href="https://twitter.com/i/flow/login" target="_blank">
+                <figure>
+                    <img src="../static/images/footer-logo2.png" alt="" />
+                </figure>
+            </a>
+        </div>
+    </div>
+</footer>
+<script>
+    AOS.init();
+</script>
+{% endblock %}

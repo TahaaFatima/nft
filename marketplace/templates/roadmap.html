@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<header class="roadmap-header">
+    <div class="roadmap-container">
+        <div class="roadmap-header-div1">
+            <figure>
+                <img src="../static/images/logo.png" alt="" />
+            </figure>
+        </div>
+        <div class="roadmap-header-div2">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="{% url 'home' %}">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'collect' %}">
+                            Collections
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'roadmap' %}">
+                            Roadmap
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'faq' %}">
+                            FAQs
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="roadmap-header-div3">
+            <a class="roadmap-wallet" href="{% url 'connect_wallet' %}"> Connect Wallet </a>
+        </div>
+    </div>
+    </div>
+</header>
+<section class="roadmap-sec-1">
+    <div class="roadmap-container single-item">
+        <div class="roadmap-sec1-div1">
+            <h3>
+                Feb-Apr - Phase 0 Planning
+            </h3>
+            <ul>
+                <li> Arts and photograph: Mockup, Designs, Photographs, Creative </li>
+                <li> Discord Server built </li>
+                <li> Brand & Marketing Strategy assessment </li>
+                <li> Creation of the Social Medias </li>
+                <li> Influencers will start to run paid Promo on Twitter </li>
+                <li> Partnership will start </li>
+                <li> Promo and paid adds will be running on reddit and Telegram through Influencers and until the
+                    Go-live of
+                    the game </li>
+            </ul>
+        </div>
+        <div class="roadmap-sec1-div2">
+            <h3 class="roadmap-two1">
+                April 14th - Phase 1
+            </h3>
+            <ul>
+                <li>
+                    Whitelist Opening
+                    (April 18th)
+                </li>
+                <li>
+                    Bark Crypto Pug NFT PRE-Sale
+                    (May 10th)
+                </li>
+                <li>
+                    Public Sale
+                    (May 20th)
+                </li>
+            </ul>
+        </div>
+        <div class="roadmap-sec1-div3">
+            <h3 class="roadmap-three1">
+                ETA August 25th - Phase 2
+            </h3>
+            <h3>
+                The token
+            </h3>
+            <p>
+                The token will be embedded in the website and will have a separate Smart Contract.
+            </p>
+            <ul>
+                <li> Website </li>
+                <li> Smart Contract </li>
+                <li> Tokenomics </li>
+                <li> Integrations </li>
+                <li> Deployment on MainNet </li>
+            </ul>
+        </div>
+        <div class="roadmap-sec1-div4">
+            <h3 class="roadmap-four">
+                ETA November 15th - Phase 3
+            </h3>
+            <ul>
+                <li> Full Platform Launch </li>
+                <li> Staking </li>
+                <li> Purchase with LASM on the platform </li>
+                <li> Holders of LASM will receive L.E.C NFTs </li>
+                <li> Mobile Apps iOs & Android </li>
+                <li> Launchpad </li>
+                <li> 2.Gen NFT Drops </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<footer class="roadmap-footer">
+    <div class="roadmap-container">
+        <div class="roadmap-footer-div1">
+            <a href="#">
+                <figure>
+                    <img src="../static/images/logo.png" alt="" />
+                </figure>
+            </a>
+        </div>
+        <div class="roadmap-footer-div2">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#"> Privacy </a>
+                    </li>
+                    <li>
+                        <a href="#"> Terms </a>
+                    </li>
+                    <li>
+                        <a href="tel:0900-78601"> Contact Us </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="roadmap-footer-div3">
+            <a href="https://discord.com/" target="_blank">
+                <figure>
+                    <img src="../static/images/footer-logo1.png" alt="" />
+                </figure>
+            </a>
+            <a href="https://twitter.com/i/flow/login" target="_blank">
+                <figure>
+                    <img src="../static/images/footer-logo2.png" alt="" />
+                </figure>
+            </a>
+        </div>
+    </div>
+</footer>
+<script>
+    $('.single-item').slick({
+        dots : true,
+        arrows : true,
+    });
+    </script>
+{% endblock %}

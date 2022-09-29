@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+    <div class="checkoutbox">
+        <img src="../static/images/logo.png" class="avatar">
+        <h1 class="h1">Checkout Form</h1>
+        <h2>
+            {% block mainContent %}
+            {{data.name_of_NFT}}
+            {% endblock mainContent %}
+        </h2>
+        <form method="POST">
+            {% csrf_token %}
+            <p>Card number</p>
+        <input type="number" name="" placeholder="Enter card number" id="card-num" required>
+        <p>Card holder</p>
+        <input type="text" name="name" placeholder="Name" id="card-holder" required>
+        <p>Expire Date</p>
+        <input type="date" name="" placeholder="Enter expire date" id="date">
+        <p> Email </p>
+        <input name="email" class="input" placeholder="Enter Email" type="email">
+        <input type="submit" name="" value="Proceed" id="button">
+        </form>
+        
+    </div>
+    {% endblock %}

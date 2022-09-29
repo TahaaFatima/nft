@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<header class="connect-header">
+  <div class="connect-container">
+    <div class="connect-header-div1">
+      <figure>
+        <img src="../static/images/logo.png" alt="" />
+      </figure>
+    </div>
+    <div class="connect-header-div2">
+      <nav>
+        <ul>
+          <li>
+            <a href="{% url 'home' %}">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'collect' %}">
+              Collections
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'roadmap' %}">
+              Roadmap
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'faq' %}">
+              FAQs
+            </a>
+          </li>
+         </ul>
+      </nav>
+    </div>
+    <div class="connect-header-div3">
+      <a class="connect-wallet" href="{% url 'connect_wallet' %}"> Connect Wallet </a>
+    </div>
+  </div>
+  </div>
+</header>
+<section class="connect-sec-1">
+  <video class="video" width="150%" height="100%" autoplay muted loop>
+    <source src="../static/images/bg.mp4" type="video/mp4">
+  </video>
+  <div class="connect-container connect-container2">
+    <div class="connect-inside1 connect-hover1">
+      <div class="connect-image">
+        <figure>
+          <img src="../static/images/meta-mask.png" alt="">
+        </figure>
+      </div>
+      <h2>
+        Meta Mask
+      </h2>
+      <button class="connect-popular">
+        Popular
+      </button>
+      <p>
+        Start exploring blockchain applications in seconds. Trusted by over 1 million users worldwide.
+      </p>
+    </div>
+    <div class="connect-inside2 connect-hover1">
+      <div class="connect-image">
+        <figure>
+          <img src="../static/images/Authereum.png" alt="">
+        </figure>
+      </div>
+      <div class="connect-heading">
+        <h2>
+          Authereum
+        </h2>
+        <p>
+          Your wallet where you want it. Log into your favourite dapps with Authereum.
+        </p>
+      </div>
+    </div>
+    <div class="connect-inside3 connect-hover1">
+      <div class="connect-image">
+        <figure>
+          <img src="../static/images/coinbase.png" alt="">
+        </figure>
+      </div>
+      <div class="connect-heading">
+        <h2>
+          Coinbase
+        </h2>
+        <p>
+          The easiest and most secure crypto wallet. ... No coinbase wallet required.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="connect-container connect-container2">
+    <div class="connect-inside4 connect-hover1">
+      <div class="connect-image">
+        <figure>
+          <img src="../static/images/bitski.png" alt="">
+        </figure>
+      </div>
+      <div class="connect-heading">
+        <h2>
+          Bitski
+        </h2>
+        <p>
+          Bitski connect communities, creators and brands thorugh unique, ownable digital content.
+        </p>
+      </div>
+    </div>
+    <div class="connect-inside5 connect-hover1">
+      <div class="connect-image">
+        <figure>
+          <img src="../static/images/Formatic.png" alt="">
+        </figure>
+      </div>
+      <div class="connect-heading">
+        <h2>
+          Formatic
+        </h2>
+        <p>
+          Let users access your Ethereum app from anywhere. No more browser extensions.
+        </p>
+      </div>
+    </div>
+    <div class="connect-inside6 connect-hover1">
+      <div class="connect-image">
+        <figure>
+          <img src="../static/images/arkane.png" alt="">
+        </figure>
+      </div>
+      <div class="connect-heading">
+        <h2>
+          Arkane
+        </h2>
+        <p>
+          Make it easy to create blockchain applications with sevure wallets solutions.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="connect-footer">
+  <div class="connect-container">
+    <div class="connect-footer-div1">
+      <a href="#">
+        <figure>
+          <img src="../static/images/logo.png" alt="" />
+        </figure>
+      </a>
+    </div>
+    <div class="connect-footer-div2">
+      <nav>
+        <ul>
+          <li>
+            <a href="#"> Privacy </a>
+          </li>
+          <li>
+            <a href="#"> Terms </a>
+          </li>
+          <li>
+            <a href="tel:0900-78601"> Contact Us </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="connect-footer-div3">
+      <a href="https://discord.com/" target="_blank">
+        <figure>
+          <img src="../static/images/footer-logo1.png" alt="" />
+        </figure>
+      </a>
+      <a href="https://twitter.com/i/flow/login" target="_blank">
+        <figure>
+          <img src="../static/images/footer-logo2.png" alt="" />
+        </figure>
+      </a>
+    </div>
+  </div>
+</footer>
+<script>
+  AOS.init();
+</script>
+{% endblock %}

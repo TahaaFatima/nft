@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<header class="register-header">
+    <div class="register-container">
+        <div class="register-position">
+            <div class="register-header-div1">
+                <figure>
+                    <img src="../static/images/logo.png" alt="" />
+                </figure>
+            </div>
+            <div class="register-header-div2">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="{% url 'home' %}">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'collect' %}">
+                                Collections
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'roadmap' %}">
+                                Roadmap
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'faq' %}">
+                                FAQs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'faq' %}">
+                                Register
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="register-header-div3">
+                <a class="register-wallet" href="{% url 'connect_wallet' %}"> Connect Wallet </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="register-sec-1 register-container">
+    <div class="register-less-width">
+        <h1> REGISTER </h1>
+        <p>
+            Don't have an account? Register now.
+        </p>
+        <form method="POST" action="" id="form">
+            {% csrf_token %}
+            <div class="register-div">
+
+                <div class="register-sec1-div1">
+                    <div class="register-label">
+                        <label for="name"> First Name </label>
+                        <input class="register-input" name="name" class="input" type="text">
+                    </div>
+
+                    <div class="register-label">
+                        <label for="email"> Email </label>
+                        <input class="register-input" name="email" class="input" type="email">
+                    </div>
+
+                    <div class="register-label">
+                        <label for="password"> Username </label>
+                        <input class="register-input" name="password" class="input" type="text">
+                    </div>
+
+
+                    <div>
+                        <input class="register-submit" type="submit">
+                    </div>
+                </div>
+
+                <div class="register-sec1-div2">
+                    <div class="register-label">
+                        <label for="username"> Last Name </label>
+                        <input class="register-input" name="username" class="input" type="text">
+                    </div>
+
+                    <div class="register-label">
+                        <label for="phone"> Phone Number </label>
+                        <input class="register-input" name="phone" class="input" type="number">
+                    </div>
+
+                    <div class="register-label">
+                        <label for="password"> Password </label>
+                        <input class="register-input" name="repassword" class="input" type="password">
+                    </div>
+
+                    <div>
+                        <input class="register-reset" type="reset">
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+</section>
+
+<footer class="register-footer">
+    <div class="register-container">
+        <div class="register-position">
+            <div class="register-footer-div1">
+                <a href="#">
+                    <figure>
+                        <img src="../static/images/logo.png" alt="" />
+                    </figure>
+                </a>
+            </div>
+            <div class="register-footer-div2">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#"> Privacy </a>
+                        </li>
+                        <li>
+                            <a href="#"> Terms </a>
+                        </li>
+                        <li>
+                            <a href="tel:0900-78601"> Contact Us </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="register-footer-div3">
+                <a href="https://discord.com/" target="_blank">
+                    <figure>
+                        <img src="../static/images/footer-logo1.png" alt="" />
+                    </figure>
+                </a>
+                <a href="https://twitter.com/i/flow/login" target="_blank">
+                    <figure>
+                        <img src="../static/images/footer-logo2.png" alt="" />
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    $("#form").validate({
+    
+    errorClass: "error fail-alert",
+    validClass: "valid success-alert",
+    
+    rules: {
+        name: {
+            required : true,
+            minlength : 3
+        },
+    
+        email: {
+            required : true,
+            email : true
+        },
+    
+        password: {
+            required : true,
+            minlength : 8
+        },
+    
+        username: {
+            required : true,
+            minlength : 5
+        },
+    
+        phone: {
+            required : true,
+            number : true,
+            minlength : 11
+        },
+    
+        repassword: {
+            required : true,
+            minlength : 8,
+            password : true
+        },
+    
+    // messages: {
+    //     name : {
+    //         required : "Please enter your name",
+    //         minlength : "Your name should be atleast 3 characters"
+    //     }
+    // }
+    
+    }
+    })
+    </script>
+{% endblock %}

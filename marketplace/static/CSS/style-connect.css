@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gradient : linear-gradient(to right, #F827DE, #2B14F9);
+    --div-gradient : linear-gradient(127.41deg, rgba(218, 37, 226, 0.2) 14.83%, rgba(87, 24, 243, 0.2) 110.24%, rgba(255, 245, 238, 0.2) 110.24%);
+    --h1 : exo-extrabold;
+    --h2 : exo-semibold;
+    --text : exo-thin;
+    --grey : #5c4d5d;
+    --hover-color: #CC23E4;
+}
+
+@font-face {
+    font-family: exo-extrabold;
+    src: url(../fonts/Exo-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: exo-semibold;
+    src: url(../fonts/Exo-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: exo-thin;
+    src: url(../fonts/Exo-Thin.ttf);
+}
+
+body {
+    /* background-image: url(images/body-background.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    color: white;
+    background-color: black;
+}
+
+.hover:hover {
+    background-image: linear-gradient(to right, #2B14F9,  #F827DE);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.connect-container {
+    width: 90%;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.connect-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.connect-header {
+    font-family: var(--h2);
+    font-size: large;
+    padding: 30px 0;
+}
+
+.connect-header li {
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+.connect-header li:hover {
+    color: linear-gradient(to right, #2B14F9,  #F827DE );
+}
+
+.connect-header-div1 {
+    width: 10%;
+}
+
+.connect-header-div2 {
+    width: 70%;
+}
+
+.connect-header-div2 a:hover {
+    color: var(--hover-color);
+  }
+  
+.connect-header-div2 a {
+    position: relative;
+  }
+  
+.connect-header-div2 a:hover::before {
+    content: "";
+    background: var(--gradient);
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    margin-top: 4px;
+  }
+  
+
+.connect-header-div3 {
+    width: 20%;
+    text-align: right;
+    padding-top: 15px;
+}
+
+.connect-header .connect-wallet {
+    background-color: inherit;
+    padding: 15px 50px;
+    margin-top: 5px;
+    font-family: var(--h2);
+    font-size: 20px;
+    border: 1px white solid;
+    border-radius: 5px;
+}
+
+.connect-header .connect-wallet:hover {
+    background-image: var(--gradient);
+    border: none;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: cover;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+}
+
+.connect-sec-1 {
+    font-family: var(--h2);
+    font-size: 25px;
+}
+
+.connect-sec-1 p {
+    width: 100%;
+    padding-left : 15px;
+    font-family: var(--text);
+}
+
+.connect-sec1-div1 { 
+    width: 100%;
+}
+
+.connect-sec-1 h2 {
+    padding: 15px;
+}
+
+.connect-inside1 {
+    background-image: var(--div-gradient);
+    margin-bottom: 40px;
+    padding: 35px 5px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.connect-popular {
+    width: 30%;
+}
+
+.connect-inside1 button {
+    background-image: var(--gradient);
+    color: white;
+    border: none;
+    margin: 10px 15px;
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+
+.connect-inside2 {
+    background-image: var(--div-gradient);
+    margin-bottom: 40px;
+    padding: 35px 5px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.connect-inside3 {
+    background-image: var(--div-gradient);
+    margin-bottom: 40px;
+    padding: 35px 5px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.connect-inside4 {
+    background-image: var(--div-gradient);
+    margin-bottom: 40px;
+    padding: 35px 5px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.connect-inside5 {
+    background-image: var(--div-gradient);
+    margin-bottom: 40px;
+    padding: 35px 5px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.connect-inside6 {
+    background-image: var(--div-gradient);
+    margin-bottom: 40px;
+    padding: 35px 5px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.connect-inside1:hover {
+    box-shadow: 1px 0 8px 0 var(--hover-color);
+}
+
+.connect-inside2:hover {
+    box-shadow: 1px 0 8px 0 var(--hover-color);
+}
+
+.connect-inside3:hover {
+    box-shadow: 1px 0 8px 0 var(--hover-color);
+}
+
+.connect-inside4:hover {
+    box-shadow: 1px 0 8px 0 var(--hover-color);
+}
+
+.connect-inside5:hover {
+    box-shadow: 1px 0 8px 0 var(--hover-color);
+}
+
+.connect-inside6:hover {
+    box-shadow: 1px 0 8px 0 var(--hover-color);
+}
+
+
+.connect-image {
+    padding-left: 15px;
+}
+
+.connect-heading {
+    padding-top: 10px;
+}
+
+.connect-hover1:hover {
+    background-image: var(--div-gradient) ;
+    cursor: pointer;
+}
+
+.connect-footer {
+    background-image: url(../images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--text);
+    padding: 35px 0;
+}
+
+.connect-footer li {
+    display: inline-block;
+    padding: 25px 40px;
+}
+
+.connect-footer a {
+    display: inline-block;
+}
+
+.connect-footer-div1 {
+    width: 10%;
+    padding-top: 8px;
+} 
+
+.connect-footer-div2 {
+    width: 60%;
+    text-align: right;
+}
+
+.connect-footer-div3 {
+    width: 30%;
+    text-align: right;
+    padding-top: 6px;
+}
