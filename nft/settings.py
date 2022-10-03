@@ -126,10 +126,10 @@ MEDIA_URL = '/images/'
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "static/images")
-STATIC_ROOT = os.path.join(BASE_DIR, "marketplace")
+STATIC_ROOT = os.path.join(BASE_DIR, "marketplace/static")
 
 STATICFILES_DIRS = (
-os.path.join(BASE_DIR, 'marketplace/static'),
+os.path.join(BASE_DIR, 'marketplace/static/'),
 )
 
 # Default primary key field type
