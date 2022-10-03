@@ -129,7 +129,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "marketplace/static/uploads")
 STATIC_ROOT = os.path.join(BASE_DIR, 'marketplace/static')
 
 STATICFILES_DIRS = (
-os.path.join(BASE_DIR, '/marketplace/static'),
+os.path.join(BASE_DIR, 'marketplace/static'),
 )
 
 # Default primary key field type
