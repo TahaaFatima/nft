@@ -119,14 +119,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = '/images'
-MEDIA_URL = ''
+STATIC_URL = '/static/'
+MEDIA_URL = '/images/'
 
 #  Add configuration for static files storage using whitenoise
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "marketplace/static/uploads")
-STATIC_ROOT = os.path.join(BASE_DIR, 'marketplace/static')
+MEDIA_ROOT = os.path.join(BASE_DIR, "static/images")
+STATIC_ROOT = os.path.join(BASE_DIR, "marketplace")
 
 STATICFILES_DIRS = (
 os.path.join(BASE_DIR, 'marketplace/static'),
