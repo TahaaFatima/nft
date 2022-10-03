@@ -125,7 +125,7 @@ MEDIA_URL = '/images/'
 #  Add configuration for static files storage using whitenoise
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "static/images")
+MEDIA_ROOT = os.path.join(BASE_DIR, "marketplace/static/images")
 STATIC_ROOT = os.path.join(BASE_DIR, "marketplace/static")
 
 # STATICFILES_DIRS = (
