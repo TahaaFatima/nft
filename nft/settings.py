@@ -146,6 +146,6 @@ EMAIL_HOST_USER = 'enaftee34@gmail.com'
 EMAIL_HOST_PASSWORD ='iotkflgstuhtareo'
 EMAIL_USE_TLS = True
 
-# import dj_database_url 
+## import dj_database_url 
 # prod_db  =  dj_database_url.config(conn_max_age=500)
 # DATABASES['default'].update(prod_db)
