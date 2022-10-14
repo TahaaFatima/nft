@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-)g#cn$iqr=j)p4b(w25jqjph3dr%5e+0ucw6zh7z77th++ddm1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nftwallet.herokuapp.com']
 
 
 # Application definition
