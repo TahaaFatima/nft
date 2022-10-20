@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gradient: linear-gradient(to right, #f827de, #2b14f9);
+  --div-gradient: linear-gradient(127.41deg, rgba(218, 37, 226, 0.2) 14.83%, rgba(87, 24, 243, 0.2) 110.24%, rgba(255, 245, 238, 0.2) 110.24%);
+  --hover-color: #CC23E4;
+  --h1: exo-extrabold;
+  --h2: exo-semibold;
+  --text: exo-thin;
+}
+
+@font-face {
+  font-family: exo-extrabold;
+  src: url(../fonts/Exo-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: exo-semibold;
+  src: url(../fonts/Exo-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: exo-thin;
+  src: url(../fonts/Exo-Thin.ttf);
+}
+
+body {
+  /* background-image: url(../images/body-background.png); */
+  /* background-image: url(../images/body-bg.png); */
+  background-image: url(../images/compressed.jpg);
+  /* background-image: url(../images/compressed-min.jpg); */
+  background-repeat: no-repeat;
+  background-color: black;
+  color: white;
+}
+
+.register-hover:hover {
+  background-image: linear-gradient(to right, #2b14f9, #f827de);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.register-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.register-less-width {
+  width: 70%;
+  margin: 0 auto;
+  background-image: var(--div-gradient);
+  padding: 40px 0;
+  border-radius: 10px;
+}
+
+.register-header {
+  font-family: var(--h2);
+  font-size: large;
+}
+
+.register-position {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.register-header li {
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+.register-header-div1 {
+  width: 10%;
+}
+
+.register-header-div2 {
+  width: 70%;
+}
+
+.register-header-div2 a:hover {
+  color: var(--hover-color);
+}
+
+.register-header-div2 a {
+  position: relative;
+}
+
+.register-header-div2 a:hover::before {
+  content: "";
+  background: var(--gradient);
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  margin-top: 4px;
+}
+
+.register-header-div3 {
+  width: 20%;
+  text-align: right;
+  padding-top: 15px;
+}
+
+.register-header .register-wallet {
+  background-color: inherit;
+  padding: 15px 50px;
+  margin-top: 15px;
+  font-family: var(--h2);
+  font-size: 20px;
+  border: 1px white solid;
+  border-radius: 5px;
+}
+
+.register-header .register-wallet:hover {
+  background-image: var(--gradient);
+  border: none;
+}
+
+
+.register-sec-1 {
+    padding-bottom: 50px;
+}
+
+.register-sec-1 h1{
+    font-family: var(--h2);
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.register-sec-1 p {
+  font-family: var(--text);
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.register-div{
+    display: flex;
+    justify-content: space-around;
+}
+
+label{
+    font-family: var(--text);
+    font-size: 20px;
+}
+
+.register-label {
+  padding: 20px 0;
+}
+
+.register-label input {
+  width: 300px;
+}
+
+.register_input{
+    display: block;
+    font-family: var(--h2);
+    font-size: 20px;
+    color: white;
+    background-color: var(--gradient);
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 1px rgb(112, 112, 112) solid;
+}
+
+.register-submit {
+  padding: 8px 50px;
+  margin-top: 10px;
+}
+
+.register-submit:hover{
+    background-image: var(--gradient);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-reset {
+  padding: 8px 50px;
+  margin-top: 10px;
+}
+
+.register-reset:hover{
+    background-image: var(--gradient);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .note {
+    color: red;
+}
+
+.register-sec1-div1 {
+  width: 30%;
+  margin: 0 auto
+}
+
+.register-sec1-div2 {
+  width: 32%;
+  margin: 0 auto;
+}
+
+
+label.error {
+    color: red;
+    font-size: 1rem;
+    display: block;
+    margin-top: 5px;
+}
+
+input.error {
+    border: 1px solid red;
+    font-weight: 200;
+    color: rgb(197, 45, 45);
+}
+
+input.valid.error-alert{
+    font-family: var(--h2);
+}
+
+input.valid.success-alert {
+    border: 2px solid #4CAF50;
+    color: green;
+}
+
+.register-footer {
+  background-image: url(../images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: var(--text);
+}
+
+.register-footer li {
+  display: inline-block;
+  padding: 25px 40px;
+}
+
+.register-footer a {
+  display: inline-block;
+}
+
+.register-footer-div1 {
+  width: 10%;
+  padding-top: 8px;
+}
+
+.register-footer-div2 {
+  width: 60%;
+  text-align: right;
+}
+
+.register-footer-div3 {
+  width: 30%;
+  text-align: right;
+  padding-top: 6px;
+}

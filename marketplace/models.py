@@ -35,7 +35,7 @@ class Testimonials(models.Model):
 class Collection(models.Model):
     name_of_NFT = models.CharField(max_length=30)
     artist_name = models.CharField( max_length=50)
-    image = models.ImageField(upload_to= 'static/uploads')
+    image = models.ImageField(upload_to= 'uploads')
     detail = models.CharField(max_length=500)
     currency = models.CharField(max_length=100)
 
