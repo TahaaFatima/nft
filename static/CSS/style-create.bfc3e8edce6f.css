@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gradient : linear-gradient(to right, #F827DE, #2B14F9);
+    --div-gradient : linear-gradient(127.41deg, rgba(218, 37, 226, 0.2) 14.83%, rgba(87, 24, 243, 0.2) 110.24%, rgba(255, 245, 238, 0.2) 110.24%);
+    --h1 : exo-extrabold;
+    --h2 : exo-semibold;
+    --text : exo-thin;
+    --grey : #5c4d5d;
+    --hover-color: #CC23E4;
+}
+
+@font-face {
+    font-family: exo-extrabold;
+    src: url("../fonts/Exo-ExtraBold.e36dc2cb4f53.ttf");
+}
+
+@font-face {
+    font-family: exo-semibold;
+    src: url("../fonts/Exo-SemiBold.824793a829ee.ttf");
+}
+
+@font-face {
+    font-family: exo-thin;
+    src: url("../fonts/Exo-Thin.7425040c8ddb.ttf");
+}
+
+body {
+    /* 
+    background-repeat: no-repeat;
+    background-size: cover; */
+    color: white;
+    background-color: black;
+}
+
+.hover:hover {
+    background-image: linear-gradient(to right, #2B14F9,  #F827DE);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.create-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.create-container2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.create-header {
+    font-family: var(--h2);
+    font-size: large;
+    padding: 30px 0;
+}
+
+.create-header li {
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+.create-header li:hover {
+    color: linear-gradient(to right, #2B14F9,  #F827DE );
+}
+
+.create-header-div1 {
+    width: 10%;
+}
+
+.create-header-div2 {
+    width: 70%;
+}
+
+.create-header-div2 a:hover {
+    color: var(--hover-color);
+  }
+  
+.create-header-div2 a {
+    position: relative;
+  }
+  
+.create-header-div2 a:hover::before {
+    content: "";
+    background: var(--gradient);
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    margin-top: 4px;
+  }
+  
+
+.create-header-div3 {
+    width: 20%;
+    text-align: right;
+    padding-top: 15px;
+}
+
+.create-header .create-wallet {
+    background-color: inherit;
+    padding: 15px 50px;
+    margin-top: 5px;
+    font-family: var(--h2);
+    font-size: 20px;
+    border: 1px white solid;
+    border-radius: 5px;
+}
+
+.create-header .create-wallet:hover {
+    background-image: var(--gradient);
+    border: none;
+}
+
+.create-sec-1 {
+    padding: 40px 0;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: cover;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+}
+
+.create-sec-1 .create-main {
+    text-align: center;
+    font-family: var(--h2);
+    font-size: 60px;
+    padding-bottom: 15px;
+}
+
+.create-less-width {
+    width: 45%;
+}
+
+.create-sec-1 p {
+    text-align: center;
+    font-family: var(--text);
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.create-sec-1 h3 {
+    padding: 10px 0;
+}
+
+.create-sec1-div1 {
+    width: 35%;
+    margin: 26px auto;
+    text-align: center;
+    font-family: var(--h2);
+    background-image: var(--div-gradient);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.create-sec1-div2 {
+    width: 35%;
+    margin: 26px auto;
+    text-align: center;
+    font-family: var(--h2);
+    background-image: var(--div-gradient);
+    border-radius: 10px;
+    padding: 15px;
+    
+}
+
+.create-sec1-div2:hover {
+    cursor: pointer;
+    box-shadow: 1px 0 8px 0 var(--hover-color);
+}
+
+.create-sec1-div1 img {
+    padding: 10px 0;
+    transition: all;
+    transition-duration: 0.5s ;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+}
+
+.create-sec1-div1 img:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
+.create-sec1-div2 img {
+    padding: 10px 0;
+    transition: all;
+    transition-duration: 0.5s ;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+}
+
+.create-sec1-div2 img:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
+.create-sec1-div1:hover { 
+    cursor: pointer;
+    box-shadow: 1px 0 8px 0 var(--hover-color);
+}
+
+
+.create-footer {
+    background-image: url("../images/footer-bg.c0460f19f795.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--text);
+    padding: 35px 0;
+}
+
+.create-footer li {
+    display: inline-block;
+    padding: 25px 40px;
+}
+
+.create-footer a {
+    display: inline-block;
+}
+
+.create-footer-div1 {
+    width: 10%;
+    padding-top: 8px;
+} 
+
+.create-footer-div2 {
+    width: 60%;
+    text-align: right;
+}
+
+.create-footer-div3 {
+    width: 30%;
+    text-align: right;
+    padding-top: 6px;
+}

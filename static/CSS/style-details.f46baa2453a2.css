@@ -1,0 +1,27 @@
+.home-sec3-div1 .detail-hover {
+    background-image: var(--gradient);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: var(--h2);
+    margin-right: 20px;
+}
+  
+.detail-hover:hover {
+    background-image: linear-gradient(to right, #2b14f9, #f827de);
+} 
+
+.detail-div {
+    width: 50%;
+    text-align: left;
+    padding-right: 20px;
+  }
+
+.detail-image {
+    width: 500px,
+}
+  
+.detail_div {
+    text-align: left;
+}

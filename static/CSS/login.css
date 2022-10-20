@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(./images/compressed.jpg);
+    background-image: url(../images/compressed.jpg);
     background-size: cover;
     align-items: center;
     justify-content: center;

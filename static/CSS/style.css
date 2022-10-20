@@ -846,7 +846,7 @@ a {
 body{
   margin: 0;
   padding: 0;
-  background-image:url(./images/compressed.jpg);
+  background-image:url(../images/compressed.jpg);
   background-color: black;
   background-size: contain 100vw;
   background-repeat: no-repeat;
